@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Asad Khan Ustad — Portfolio</title>
+  <meta name="description" content="Portfolio of Asad Khan Ustad — Information Science student specializing in Java, Spring Boot, Web Development, and Backend Systems." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="brand-container">
+        <img src="images/ptf.jpg" alt="AsadKhan Ustad" class="profile-pic" />
+        <a href="#hero" class="brand">Asad Khan Ustad</a>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="section container">
+    <h1>Hi — I'm <span class="highlight">Asad</span></h1>
+    <p>Motivated Information Science Engineering student with strong skills in Java, Spring Boot, Web Development, and Backend Systems.</p>
+    <div class="btn-group">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="asadresume.pdf" target="_blank" class="btn ghost">Download Resume</a>
+    </div>
+  </section>
+
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>I am an Information Science student at Gogte Institute of Technology (CGPA: 8.01), passionate about building scalable web applications, REST APIs, and backend solutions. I enjoy solving real-world problems through technology and have hands-on experience in Java, Spring Boot, Docker, AWS, and modern web frameworks.</p>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Uni Journey</h3>
+        <p>Spring Boot web app with Thymeleaf, Hibernate, MySQL, and Docker. Enabled QR-based certificate verification using Apache Tomcat.</p>
+        <p class="meta">Tech: Java, Spring Boot, MySQL, Docker</p>
+      </div>
+      <div class="card">
+        <h3>Hand Gesture Control</h3>
+        <p>Gesture-controlled LED system using Arduino, Python, MediaPipe, and PySerial for real-time, touchless appliance control.</p>
+        <p class="meta">Tech: Arduino, Python, OpenCV</p>
+      </div>
+      <div class="card">
+        <h3>Scalable Feedback System</h3>
+        <p>Designed using Java (Spring Boot), MongoDB, and REST APIs. Deployed via Docker Swarm with testing in Postman.</p>
+        <p class="meta">Tech: Java, MongoDB, Docker</p>
+      </div>
+      <div class="card">
+        <h3>Automated Receipt Processing Tool</h3>
+        <p>Serverless AWS Lambda app using S3, Textract, and DynamoDB for OCR-based extraction and real-time storage.</p>
+        <p class="meta">Tech: AWS Lambda, S3, Textract, DynamoDB</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section container">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Java</li><li>Spring Boot</li><li>HTML5</li><li>CSS</li><li>JavaScript</li>
+      <li>React.js</li><li>MySQL</li><li>MongoDB</li><li>Docker</li><li>AWS</li>
+      <li>DSA</li><li>Git</li>
+    </ul>
+  </section>
+
+  <section id="achievements" class="section container">
+    <h2>Achievements</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/win_1.jpg" alt="Hand Gesture LED Control" />
+        <h3>Hand Gesture LED Control</h3>
+        <p>Arduino + Python + MediaPipe setup for controlling LEDs with hand gestures.</p>
+      </div>
+      <div class="card">
+        <img src="images/win_2.jpg" alt="Technical Fest Participation" />
+        <h3>Technical Fest</h3>
+        <p>Participation and problem-solving in technical fests and hackathons.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:asadkhanustad@gmail.com">asadkhanustad@gmail.com</a> or use the form below.</p>
+    <form onsubmit="handleContact(event)">
+      <input name="name" placeholder="Name" required />
+      <input name="email" type="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+      <p id="msg"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Asad Khan Ustad · 
+      <a href="https://github.com/asad2802" target="_blank">GitHub</a> · 
+      <a href="https://www.linkedin.com/in/asadustad" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
