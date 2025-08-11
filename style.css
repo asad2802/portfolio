@@ -221,6 +221,7 @@ p {
 
 /* ==== Responsive ==== */
 @media (max-width: 768px) {
+  /* Navbar dropdown */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -233,5 +234,57 @@ p {
   }
   .nav-toggle {
     display: block;
+  }
+
+  /* Hero section stacking */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .hero-left, 
+  .hero-right {
+    flex: unset;
+    width: 100%;
+  }
+
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Button group stacking neatly */
+  .btn {
+    margin: 0.3rem 0;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Make grids single-column */
+  .projects-grid,
+  .skills,
+  .ach-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce text sizes */
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 0.95rem;
   }
 }
